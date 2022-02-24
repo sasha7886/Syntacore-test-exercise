@@ -1,0 +1,850 @@
+ -- Copyright (C) 2018  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 1:       2.5V
+ --                  Bank 2:       2.5V
+ --                  Bank 3:       2.5V
+ --                  Bank 4:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 7:       2.5V
+ --                  Bank 8:       2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --                  or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+CHIP  "top"  ASSIGNED TO AN: EP4CE30F29C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
+slave_1_addr[11]             : A3        : output : 2.5 V             :         : 8         : N              
+master_0_addr[18]            : A4        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
+master_0_addr[1]             : A6        : input  : 2.5 V             :         : 8         : N              
+master_1_addr[4]             : A7        : input  : 2.5 V             :         : 8         : N              
+master_0_wdata[17]           : A8        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
+slave_0_addr[26]             : A10       : output : 2.5 V             :         : 8         : N              
+slave_1_addr[25]             : A11       : output : 2.5 V             :         : 8         : N              
+master_0_wdata[3]            : A12       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
+GND+                         : A14       :        :                   :         : 8         :                
+master_0_addr[30]            : A15       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+slave_1_wdata[25]            : A17       : output : 2.5 V             :         : 7         : N              
+slave_1_addr[4]              : A18       : output : 2.5 V             :         : 7         : N              
+master_0_rdata[6]            : A19       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
+master_0_wdata[22]           : A21       : input  : 2.5 V             :         : 7         : N              
+master_0_rdata[10]           : A22       : output : 2.5 V             :         : 7         : N              
+master_1_rdata[8]            : A23       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
+slave_1_wdata[31]            : A25       : output : 2.5 V             :         : 7         : N              
+slave_0_rdata[2]             : A26       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
+VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
+GND                          : AA2       : gnd    :                   :         :           :                
+slave_0_addr[17]             : AA3       : output : 2.5 V             :         : 2         : N              
+master_1_wdata[8]            : AA4       : input  : 2.5 V             :         : 2         : N              
+master_0_wdata[7]            : AA5       : input  : 2.5 V             :         : 2         : N              
+master_1_wdata[23]           : AA6       : input  : 2.5 V             :         : 2         : N              
+slave_1_wdata[23]            : AA7       : output : 2.5 V             :         : 2         : N              
+slave_0_addr[28]             : AA8       : output : 2.5 V             :         : 2         : N              
+GNDA1                        : AA9       : gnd    :                   :         :           :                
+master_0_addr[22]            : AA10      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
+slave_0_addr[19]             : AA12      : output : 2.5 V             :         : 3         : N              
+slave_0_addr[15]             : AA13      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA14      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA15      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA16      :        :                   :         : 4         :                
+master_0_rdata[16]           : AA17      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA19      :        :                   :         : 4         :                
+GNDA4                        : AA20      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA22      :        :                   :         : 5         :                
+master_1_rdata[27]           : AA23      : output : 2.5 V             :         : 5         : N              
+slave_0_rdata[17]            : AA24      : input  : 2.5 V             :         : 5         : N              
+slave_1_rdata[25]            : AA25      : input  : 2.5 V             :         : 5         : N              
+slave_0_rdata[22]            : AA26      : input  : 2.5 V             :         : 5         : N              
+GND                          : AA27      : gnd    :                   :         :           :                
+VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
+slave_1_addr[22]             : AB1       : output : 2.5 V             :         : 2         : N              
+master_1_addr[14]            : AB2       : input  : 2.5 V             :         : 2         : N              
+master_0_addr[10]            : AB3       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   :         : 2         :                
+slave_0_wdata[27]            : AB5       : output : 2.5 V             :         : 2         : N              
+slave_0_wdata[6]             : AB6       : output : 2.5 V             :         : 2         : N              
+slave_0_wdata[12]            : AB7       : output : 2.5 V             :         : 2         : N              
+slave_1_wdata[18]            : AB8       : output : 2.5 V             :         : 2         : N              
+slave_0_addr[2]              : AB9       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB10      : power  :                   : 2.5V    : 3         :                
+master_0_rdata[0]            : AB11      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB12      :        :                   :         : 3         :                
+slave_0_addr[22]             : AB13      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB14      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB15      :        :                   :         : 4         :                
+slave_0_rdata[19]            : AB16      : input  : 2.5 V             :         : 4         : N              
+slave_1_rdata[20]            : AB17      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB18      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB19      :        :                   :         : 4         :                
+slave_0_rdata[16]            : AB20      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB21      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB22      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
+master_0_rdata[25]           : AB25      : output : 2.5 V             :         : 5         : N              
+slave_1_rdata[27]            : AB26      : input  : 2.5 V             :         : 5         : N              
+master_0_rdata[28]           : AB27      : output : 2.5 V             :         : 5         : N              
+master_1_rdata[25]           : AB28      : output : 2.5 V             :         : 5         : N              
+slave_1_addr[16]             : AC1       : output : 2.5 V             :         : 2         : N              
+master_0_addr[17]            : AC2       : input  : 2.5 V             :         : 2         : N              
+slave_0_addr[1]              : AC3       : output : 2.5 V             :         : 2         : N              
+slave_1_wdata[26]            : AC4       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 2         :                
+GND                          : AC6       : gnd    :                   :         :           :                
+slave_0_addr[16]             : AC7       : output : 2.5 V             :         : 2         : N              
+slave_1_req                  : AC8       : output : 2.5 V             :         : 3         : N              
+GND                          : AC9       : gnd    :                   :         :           :                
+slave_0_addr[3]              : AC10      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC11      :        :                   :         : 3         :                
+master_0_addr[11]            : AC12      : input  : 2.5 V             :         : 3         : N              
+GND                          : AC13      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC14      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC15      :        :                   :         : 4         :                
+GND                          : AC16      : gnd    :                   :         :           :                
+master_1_rdata[11]           : AC17      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC18      :        :                   :         : 4         :                
+slave_1_rdata[9]             : AC19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AC20      : gnd    :                   :         :           :                
+master_0_rdata[17]           : AC21      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC22      :        :                   :         : 4         :                
+GND                          : AC23      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC24      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC26      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC27      :        :                   :         : 5         :                
+slave_0_rdata[21]            : AC28      : input  : 2.5 V             :         : 5         : N              
+master_1_wdata[19]           : AD1       : input  : 2.5 V             :         : 2         : N              
+slave_0_addr[20]             : AD2       : output : 2.5 V             :         : 2         : N              
+slave_1_addr[9]              : AD3       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD4       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD5       :        :                   :         : 2         :                
+VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD7       :        :                   :         : 3         :                
+slave_0_wdata[21]            : AD8       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
+slave_0_wdata[16]            : AD10      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD11      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD12      :        :                   :         : 3         :                
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD14      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD15      :        :                   :         : 4         :                
+VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
+master_1_rdata[7]            : AD17      : output : 2.5 V             :         : 4         : N              
+slave_1_rdata[13]            : AD18      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD19      :        :                   :         : 4         :                
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+master_1_rdata[20]           : AD21      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD22      :        :                   :         : 4         :                
+VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD24      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD25      :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD26      :        :                   :         : 5         :                
+slave_1_rdata[18]            : AD27      : input  : 2.5 V             :         : 5         : N              
+master_1_rdata[21]           : AD28      : output : 2.5 V             :         : 5         : N              
+master_0_addr[15]            : AE1       : input  : 2.5 V             :         : 2         : N              
+slave_0_wdata[20]            : AE2       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE5       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE6       :        :                   :         : 3         :                
+slave_0_addr[6]              : AE7       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE8       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE9       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE10      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE11      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE12      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE13      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE14      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE15      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE16      :        :                   :         : 4         :                
+slave_1_rdata[7]             : AE17      : input  : 2.5 V             :         : 4         : N              
+slave_0_rdata[11]            : AE18      : input  : 2.5 V             :         : 4         : N              
+slave_1_rdata[15]            : AE19      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE20      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE21      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE22      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE23      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE24      :        :                   :         : 4         :                
+master_0_rdata[20]           : AE25      : output : 2.5 V             :         : 4         : N              
+master_1_rdata[16]           : AE26      : output : 2.5 V             :         : 5         : N              
+slave_0_rdata[20]            : AE27      : input  : 2.5 V             :         : 5         : N              
+slave_0_rdata[14]            : AE28      : input  : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+master_1_addr[15]            : AF2       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF3       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF4       :        :                   :         : 3         :                
+master_1_wdata[13]           : AF5       : input  : 2.5 V             :         : 3         : N              
+master_1_addr[10]            : AF6       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF7       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF8       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF9       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF10      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF11      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF12      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF13      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF14      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF15      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF16      :        :                   :         : 4         :                
+slave_0_rdata[15]            : AF17      : input  : 2.5 V             :         : 4         : N              
+master_1_rdata[9]            : AF18      : output : 2.5 V             :         : 4         : N              
+slave_0_rdata[7]             : AF19      : input  : 2.5 V             :         : 4         : N              
+master_0_rdata[13]           : AF20      : output : 2.5 V             :         : 4         : N              
+master_1_rdata[17]           : AF21      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF22      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF23      :        :                   :         : 4         :                
+master_0_rdata[15]           : AF24      : output : 2.5 V             :         : 4         : N              
+slave_0_rdata[13]            : AF25      : input  : 2.5 V             :         : 4         : N              
+slave_1_rdata[17]            : AF26      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF27      :        :                   :         : 5         :                
+GND                          : AF28      : gnd    :                   :         :           :                
+VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
+GND                          : AG2       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG3       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG4       :        :                   :         : 3         :                
+GND                          : AG5       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG6       :        :                   :         : 3         :                
+master_0_addr[29]            : AG7       : input  : 2.5 V             :         : 3         : N              
+master_0_wdata[1]            : AG8       : input  : 2.5 V             :         : 3         : N              
+GND                          : AG9       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG10      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG11      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG12      :        :                   :         : 3         :                
+GND                          : AG13      : gnd    :                   :         :           :                
+GND+                         : AG14      :        :                   :         : 3         :                
+GND+                         : AG15      :        :                   :         : 4         :                
+GND                          : AG16      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG17      :        :                   :         : 4         :                
+slave_0_rdata[9]             : AG18      : input  : 2.5 V             :         : 4         : N              
+slave_0_rdata[12]            : AG19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG20      : gnd    :                   :         :           :                
+master_1_rdata[19]           : AG21      : output : 2.5 V             :         : 4         : N              
+master_1_rdata[14]           : AG22      : output : 2.5 V             :         : 4         : N              
+slave_1_rdata[16]            : AG23      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG24      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG25      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 4         :                
+GND                          : AG27      : gnd    :                   :         :           :                
+VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
+VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
+rst                          : AH3       : input  : 2.5 V             :         : 3         : N              
+slave_1_wdata[21]            : AH4       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
+master_1_addr[21]            : AH6       : input  : 2.5 V             :         : 3         : N              
+slave_0_addr[0]              : AH7       : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH8       :        :                   :         : 3         :                
+VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH10      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH11      :        :                   :         : 3         :                
+master_0_addr[5]             : AH12      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
+GND+                         : AH14      :        :                   :         : 3         :                
+GND+                         : AH15      :        :                   :         : 4         :                
+VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH17      :        :                   :         : 4         :                
+slave_1_rdata[19]            : AH18      : input  : 2.5 V             :         : 4         : N              
+master_0_rdata[19]           : AH19      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
+master_1_rdata[13]           : AH21      : output : 2.5 V             :         : 4         : N              
+master_0_rdata[14]           : AH22      : output : 2.5 V             :         : 4         : N              
+slave_1_rdata[14]            : AH23      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH25      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH26      :        :                   :         : 4         :                
+VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
+VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
+GND                          : B2        : gnd    :                   :         :           :                
+master_1_req                 : B3        : input  : 2.5 V             :         : 8         : N              
+master_1_wdata[6]            : B4        : input  : 2.5 V             :         : 8         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+slave_0_addr[9]              : B6        : output : 2.5 V             :         : 8         : N              
+slave_0_req                  : B7        : output : 2.5 V             :         : 8         : N              
+master_0_addr[3]             : B8        : input  : 2.5 V             :         : 8         : N              
+GND                          : B9        : gnd    :                   :         :           :                
+master_1_addr[30]            : B10       : input  : 2.5 V             :         : 8         : N              
+master_1_wdata[29]           : B11       : input  : 2.5 V             :         : 8         : N              
+GND                          : B12       : gnd    :                   :         :           :                
+GND                          : B13       : gnd    :                   :         :           :                
+GND+                         : B14       :        :                   :         : 8         :                
+master_1_wdata[0]            : B15       : input  : 2.5 V             :         : 7         : N              
+GND                          : B16       : gnd    :                   :         :           :                
+slave_0_addr[4]              : B17       : output : 2.5 V             :         : 7         : N              
+master_1_rdata[6]            : B18       : output : 2.5 V             :         : 7         : N              
+slave_0_wdata[0]             : B19       : output : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+slave_0_rdata[1]             : B21       : input  : 2.5 V             :         : 7         : N              
+master_1_rdata[1]            : B22       : output : 2.5 V             :         : 7         : N              
+slave_0_rdata[3]             : B23       : input  : 2.5 V             :         : 7         : N              
+GND                          : B24       : gnd    :                   :         :           :                
+master_0_wdata[30]           : B25       : input  : 2.5 V             :         : 7         : N              
+slave_1_rdata[6]             : B26       : input  : 2.5 V             :         : 7         : N              
+GND                          : B27       : gnd    :                   :         :           :                
+VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
+GND                          : C1        : gnd    :                   :         :           :                
+slave_1_wdata[6]             : C2        : output : 2.5 V             :         : 1         : N              
+master_1_wdata[20]           : C3        : input  : 2.5 V             :         : 8         : N              
+master_1_addr[9]             : C4        : input  : 2.5 V             :         : 8         : N              
+slave_0_wdata[7]             : C5        : output : 2.5 V             :         : 8         : N              
+master_0_wdata[19]           : C6        : input  : 2.5 V             :         : 8         : N              
+slave_0_wdata[17]            : C7        : output : 2.5 V             :         : 8         : N              
+master_1_wdata[17]           : C8        : input  : 2.5 V             :         : 8         : N              
+master_1_addr[18]            : C9        : input  : 2.5 V             :         : 8         : N              
+slave_0_addr[5]              : C10       : output : 2.5 V             :         : 8         : N              
+master_0_addr[16]            : C11       : input  : 2.5 V             :         : 8         : N              
+slave_0_addr[25]             : C12       : output : 2.5 V             :         : 8         : N              
+master_0_addr[24]            : C13       : input  : 2.5 V             :         : 8         : N              
+master_0_addr[25]            : C14       : input  : 2.5 V             :         : 8         : N              
+slave_0_wdata[4]             : C15       : output : 2.5 V             :         : 7         : N              
+slave_1_wdata[24]            : C16       : output : 2.5 V             :         : 7         : N              
+master_1_cmd                 : C17       : input  : 2.5 V             :         : 7         : N              
+master_0_rdata[4]            : C18       : output : 2.5 V             :         : 7         : N              
+master_0_rdata[9]            : C19       : output : 2.5 V             :         : 7         : N              
+master_0_rdata[8]            : C20       : output : 2.5 V             :         : 7         : N              
+master_1_ack                 : C21       : output : 2.5 V             :         : 7         : N              
+master_0_rdata[3]            : C22       : output : 2.5 V             :         : 7         : N              
+slave_0_rdata[0]             : C23       : input  : 2.5 V             :         : 7         : N              
+master_0_ack                 : C24       : output : 2.5 V             :         : 7         : N              
+slave_1_rdata[0]             : C25       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C26       :        :                   :         : 6         :                
+slave_0_wdata[14]            : C27       : output : 2.5 V             :         : 6         : N              
+GND                          : C28       : gnd    :                   :         :           :                
+slave_1_wdata[10]            : D1        : output : 2.5 V             :         : 1         : N              
+slave_1_wdata[27]            : D2        : output : 2.5 V             :         : 1         : N              
+GND                          : D3        : gnd    :                   :         :           :                
+slave_1_wdata[7]             : D4        : output : 2.5 V             :         : 8         : N              
+slave_1_addr[19]             : D5        : output : 2.5 V             :         : 8         : N              
+master_1_addr[20]            : D6        : input  : 2.5 V             :         : 8         : N              
+slave_1_wdata[20]            : D7        : output : 2.5 V             :         : 8         : N              
+master_1_wdata[10]           : D8        : input  : 2.5 V             :         : 8         : N              
+slave_0_wdata[19]            : D9        : output : 2.5 V             :         : 8         : N              
+master_0_wdata[14]           : D10       : input  : 2.5 V             :         : 8         : N              
+slave_0_wdata[24]            : D11       : output : 2.5 V             :         : 8         : N              
+slave_0_wdata[22]            : D12       : output : 2.5 V             :         : 8         : N              
+master_1_addr[24]            : D13       : input  : 2.5 V             :         : 8         : N              
+slave_0_wdata[2]             : D14       : output : 2.5 V             :         : 8         : N              
+master_1_addr[2]             : D15       : input  : 2.5 V             :         : 7         : N              
+master_1_wdata[4]            : D16       : input  : 2.5 V             :         : 7         : N              
+slave_1_wdata[1]             : D17       : output : 2.5 V             :         : 7         : N              
+slave_1_rdata[3]             : D18       : input  : 2.5 V             :         : 7         : N              
+master_1_rdata[12]           : D19       : output : 2.5 V             :         : 7         : N              
+slave_1_rdata[5]             : D20       : input  : 2.5 V             :         : 7         : N              
+slave_1_rdata[12]            : D21       : input  : 2.5 V             :         : 7         : N              
+master_0_wdata[25]           : D22       : input  : 2.5 V             :         : 7         : N              
+master_1_addr[5]             : D23       : input  : 2.5 V             :         : 7         : N              
+master_1_wdata[22]           : D24       : input  : 2.5 V             :         : 6         : N              
+master_1_wdata[25]           : D25       : input  : 2.5 V             :         : 6         : N              
+slave_0_wdata[3]             : D26       : output : 2.5 V             :         : 6         : N              
+slave_0_wdata[15]            : D27       : output : 2.5 V             :         : 6         : N              
+master_1_wdata[15]           : D28       : input  : 2.5 V             :         : 6         : N              
+slave_1_addr[8]              : E1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
+master_0_wdata[10]           : E3        : input  : 2.5 V             :         : 1         : N              
+master_1_wdata[26]           : E4        : input  : 2.5 V             :         : 1         : N              
+master_0_wdata[5]            : E5        : input  : 2.5 V             :         : 1         : N              
+VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
+slave_0_ack                  : E7        : input  : 2.5 V             :         : 8         : N              
+slave_1_ack                  : E8        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
+slave_0_addr[30]             : E10       : output : 2.5 V             :         : 8         : N              
+slave_1_wdata[15]            : E11       : output : 2.5 V             :         : 8         : N              
+master_1_addr[3]             : E12       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
+master_1_addr[1]             : E14       : input  : 2.5 V             :         : 8         : N              
+master_0_cmd                 : E15       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
+master_1_wdata[14]           : E17       : input  : 2.5 V             :         : 7         : N              
+master_0_rdata[1]            : E18       : output : 2.5 V             :         : 7         : N              
+master_0_rdata[11]           : E19       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
+slave_0_rdata[6]             : E21       : input  : 2.5 V             :         : 7         : N              
+master_1_rdata[5]            : E22       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
+master_0_wdata[15]           : E24       : input  : 2.5 V             :         : 6         : N              
+slave_0_addr[13]             : E25       : output : 2.5 V             :         : 6         : N              
+master_0_rdata[5]            : E26       : output : 2.5 V             :         : 6         : N              
+slave_1_addr[24]             : E27       : output : 2.5 V             :         : 6         : N              
+master_0_wdata[4]            : E28       : input  : 2.5 V             :         : 6         : N              
+slave_0_wdata[26]            : F1        : output : 2.5 V             :         : 1         : N              
+slave_1_wdata[28]            : F2        : output : 2.5 V             :         : 1         : N              
+slave_1_wdata[13]            : F3        : output : 2.5 V             :         : 1         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
+master_0_wdata[28]           : F5        : input  : 2.5 V             :         : 1         : N              
+GND                          : F6        : gnd    :                   :         :           :                
+master_0_addr[4]             : F7        : input  : 2.5 V             :         : 8         : N              
+master_1_rdata[23]           : F8        : output : 2.5 V             :         : 8         : N              
+GND                          : F9        : gnd    :                   :         :           :                
+master_0_addr[2]             : F10       : input  : 2.5 V             :         : 8         : N              
+slave_0_wdata[1]             : F11       : output : 2.5 V             :         : 8         : N              
+slave_1_addr[0]              : F12       : output : 2.5 V             :         : 8         : N              
+GND                          : F13       : gnd    :                   :         :           :                
+master_1_addr[26]            : F14       : input  : 2.5 V             :         : 8         : N              
+master_0_wdata[24]           : F15       : input  : 2.5 V             :         : 7         : N              
+GND                          : F16       : gnd    :                   :         :           :                
+slave_1_rdata[10]            : F17       : input  : 2.5 V             :         : 7         : N              
+slave_1_rdata[8]             : F18       : input  : 2.5 V             :         : 7         : N              
+slave_0_rdata[5]             : F19       : input  : 2.5 V             :         : 7         : N              
+GND                          : F20       : gnd    :                   :         :           :                
+master_1_rdata[0]            : F21       : output : 2.5 V             :         : 7         : N              
+master_0_rdata[12]           : F22       : output : 2.5 V             :         : 7         : N              
+GND                          : F23       : gnd    :                   :         :           :                
+master_1_wdata[31]           : F24       : input  : 2.5 V             :         : 6         : N              
+master_0_wdata[0]            : F25       : input  : 2.5 V             :         : 6         : N              
+master_1_rdata[10]           : F26       : output : 2.5 V             :         : 6         : N              
+slave_1_wdata[3]             : F27       : output : 2.5 V             :         : 6         : N              
+slave_0_wdata[25]            : F28       : output : 2.5 V             :         : 6         : N              
+slave_0_addr[7]              : G1        : output : 2.5 V             :         : 1         : N              
+master_0_wdata[6]            : G2        : input  : 2.5 V             :         : 1         : N              
+slave_0_addr[8]              : G3        : output : 2.5 V             :         : 1         : N              
+master_1_wdata[28]           : G4        : input  : 2.5 V             :         : 1         : N              
+master_0_addr[0]             : G5        : input  : 2.5 V             :         : 1         : N              
+slave_1_addr[15]             : G6        : output : 2.5 V             :         : 1         : N              
+master_1_wdata[7]            : G7        : input  : 2.5 V             :         : 1         : N              
+master_1_addr[19]            : G8        : input  : 2.5 V             :         : 8         : N              
+slave_1_addr[10]             : G9        : output : 2.5 V             :         : 8         : N              
+master_0_addr[31]            : G10       : input  : 2.5 V             :         : 8         : N              
+slave_1_addr[1]              : G11       : output : 2.5 V             :         : 8         : N              
+slave_1_addr[5]              : G12       : output : 2.5 V             :         : 8         : N              
+master_1_rdata[18]           : G13       : output : 2.5 V             :         : 8         : N              
+slave_0_addr[24]             : G14       : output : 2.5 V             :         : 8         : N              
+master_1_addr[0]             : G15       : input  : 2.5 V             :         : 7         : N              
+slave_1_wdata[29]            : G16       : output : 2.5 V             :         : 7         : N              
+master_1_rdata[3]            : G17       : output : 2.5 V             :         : 7         : N              
+master_0_wdata[29]           : G18       : input  : 2.5 V             :         : 7         : N              
+slave_1_addr[31]             : G19       : output : 2.5 V             :         : 7         : N              
+slave_0_rdata[8]             : G20       : input  : 2.5 V             :         : 7         : N              
+slave_1_rdata[2]             : G21       : input  : 2.5 V             :         : 7         : N              
+master_1_wdata[1]            : G22       : input  : 2.5 V             :         : 6         : N              
+slave_0_addr[12]             : G23       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G24       :        :                   :         : 6         :                
+slave_0_wdata[30]            : G25       : output : 2.5 V             :         : 6         : N              
+slave_1_addr[26]             : G26       : output : 2.5 V             :         : 6         : N              
+slave_0_rdata[23]            : G27       : input  : 2.5 V             :         : 6         : N              
+master_1_addr[13]            : G28       : input  : 2.5 V             :         : 6         : N              
+VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
+GND                          : H2        : gnd    :                   :         :           :                
+master_1_addr[17]            : H3        : input  : 2.5 V             :         : 1         : N              
+slave_1_wdata[17]            : H4        : output : 2.5 V             :         : 1         : N              
+slave_0_wdata[23]            : H5        : output : 2.5 V             :         : 1         : N              
+master_0_addr[14]            : H6        : input  : 2.5 V             :         : 1         : N              
+slave_1_wdata[9]             : H7        : output : 2.5 V             :         : 1         : N              
+master_0_addr[9]             : H8        : input  : 2.5 V             :         : 8         : N              
+GNDA3                        : H9        : gnd    :                   :         :           :                
+slave_1_addr[17]             : H10       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
+master_0_rdata[2]            : H12       : output : 2.5 V             :         : 8         : N              
+master_1_wdata[24]           : H13       : input  : 2.5 V             :         : 8         : N              
+master_1_wdata[2]            : H14       : input  : 2.5 V             :         : 7         : N              
+slave_1_wdata[14]            : H15       : output : 2.5 V             :         : 7         : N              
+master_1_wdata[30]           : H16       : input  : 2.5 V             :         : 7         : N              
+slave_0_rdata[10]            : H17       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+master_1_rdata[2]            : H19       : output : 2.5 V             :         : 7         : N              
+GNDA2                        : H20       : gnd    :                   :         :           :                
+master_1_addr[25]            : H21       : input  : 2.5 V             :         : 6         : N              
+slave_1_cmd                  : H22       : output : 2.5 V             :         : 6         : N              
+slave_0_wdata[29]            : H23       : output : 2.5 V             :         : 6         : N              
+slave_1_wdata[4]             : H24       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H26       :        :                   :         : 6         :                
+GND                          : H27       : gnd    :                   :         :           :                
+VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
+GND+                         : J1        :        :                   :         : 1         :                
+GND                          : J2        : gnd    :                   :         :           :                
+master_1_wdata[27]           : J3        : input  : 2.5 V             :         : 1         : N              
+slave_0_addr[11]             : J4        : output : 2.5 V             :         : 1         : N              
+slave_0_wdata[10]            : J5        : output : 2.5 V             :         : 1         : N              
+slave_1_addr[6]              : J6        : output : 2.5 V             :         : 1         : N              
+master_1_wdata[21]           : J7        : input  : 2.5 V             :         : 1         : N              
+VCCA3                        : J8        : power  :                   : 2.5V    :           :                
+VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
+master_0_req                 : J10       : input  : 2.5 V             :         : 8         : N              
+GND                          : J11       : gnd    :                   :         :           :                
+slave_1_wdata[22]            : J12       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : J13       : power  :                   : 2.5V    : 8         :                
+master_0_wdata[31]           : J14       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : J15       : power  :                   : 2.5V    : 7         :                
+slave_1_addr[2]              : J16       : output : 2.5 V             :         : 7         : N              
+slave_0_cmd                  : J17       : output : 2.5 V             :         : 7         : N              
+GND                          : J18       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J19       :        :                   :         : 7         :                
+VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
+VCCA2                        : J21       : power  :                   : 2.5V    :           :                
+master_0_rdata[7]            : J22       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J23       :        :                   :         : 6         :                
+slave_1_addr[3]              : J24       : output : 2.5 V             :         : 6         : N              
+slave_1_wdata[30]            : J25       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J26       :        :                   :         : 6         :                
+master_1_wdata[3]            : J27       : input  : 2.5 V             :         : 6         : N              
+master_0_wdata[2]            : J28       : input  : 2.5 V             :         : 6         : N              
+slave_0_addr[23]             : K1        : output : 2.5 V             :         : 1         : N              
+master_1_addr[8]             : K2        : input  : 2.5 V             :         : 1         : N              
+master_0_wdata[8]            : K3        : input  : 2.5 V             :         : 1         : N              
+master_0_wdata[27]           : K4        : input  : 2.5 V             :         : 1         : N              
+VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
+GND                          : K6        : gnd    :                   :         :           :                
+master_0_wdata[13]           : K7        : input  : 2.5 V             :         : 1         : N              
+VCCIO1                       : K8        : power  :                   : 2.5V    : 1         :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+master_0_addr[26]            : K13       : input  : 2.5 V             :         : 8         : N              
+GND                          : K14       : gnd    :                   :         :           :                
+master_1_rdata[15]           : K15       : output : 2.5 V             :         : 7         : N              
+GND                          : K16       : gnd    :                   :         :           :                
+VCCINT                       : K17       : power  :                   : 1.2V    :           :                
+GND                          : K18       : gnd    :                   :         :           :                
+VCCINT                       : K19       : power  :                   : 1.2V    :           :                
+GND                          : K20       : gnd    :                   :         :           :                
+slave_0_rdata[18]            : K21       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K22       :        :                   :         : 6         :                
+GND                          : K23       : gnd    :                   :         :           :                
+VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K25       :        :                   :         : 6         :                
+slave_1_addr[12]             : K26       : output : 2.5 V             :         : 6         : N              
+slave_1_wdata[2]             : K27       : output : 2.5 V             :         : 6         : N              
+master_0_addr[27]            : K28       : input  : 2.5 V             :         : 6         : N              
+slave_0_addr[29]             : L1        : output : 2.5 V             :         : 1         : N              
+master_0_wdata[20]           : L2        : input  : 2.5 V             :         : 1         : N              
+master_0_addr[28]            : L3        : input  : 2.5 V             :         : 1         : N              
+slave_0_wdata[28]            : L4        : output : 2.5 V             :         : 1         : N              
+master_0_addr[19]            : L5        : input  : 2.5 V             :         : 1         : N              
+master_0_addr[20]            : L6        : input  : 2.5 V             :         : 1         : N              
+slave_1_addr[20]             : L7        : output : 2.5 V             :         : 1         : N              
+master_0_wdata[26]           : L8        : input  : 2.5 V             :         : 1         : N              
+GND                          : L9        : gnd    :                   :         :           :                
+VCCINT                       : L10       : power  :                   : 1.2V    :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GND                          : L15       : gnd    :                   :         :           :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+master_1_addr[31]            : L20       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : L21       : power  :                   : 2.5V    : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L22       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L23       :        :                   :         : 6         :                
+master_0_wdata[18]           : L24       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L25       :        :                   :         : 6         :                
+slave_0_rdata[4]             : L26       : input  : 2.5 V             :         : 6         : N              
+slave_1_addr[27]             : L27       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L28       :        :                   :         : 6         :                
+slave_0_wdata[8]             : M1        : output : 2.5 V             :         : 1         : N              
+master_1_addr[29]            : M2        : input  : 2.5 V             :         : 1         : N              
+slave_0_wdata[9]             : M3        : output : 2.5 V             :         : 1         : N              
+slave_1_wdata[16]            : M4        : output : 2.5 V             :         : 1         : N              
+master_0_addr[8]             : M5        : input  : 2.5 V             :         : 1         : N              
+nSTATUS                      : M6        :        :                   :         : 1         :                
+master_1_wdata[9]            : M7        : input  : 2.5 V             :         : 1         : N              
+master_0_wdata[16]           : M8        : input  : 2.5 V             :         : 1         : N              
+slave_1_wdata[8]             : M9        : output : 2.5 V             :         : 1         : N              
+GND                          : M10       : gnd    :                   :         :           :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+slave_0_wdata[31]            : M21       : output : 2.5 V             :         : 6         : N              
+MSEL2                        : M22       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M23       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M25       :        :                   :         : 6         :                
+slave_0_addr[31]             : M26       : output : 2.5 V             :         : 6         : N              
+slave_1_rdata[1]             : M27       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M28       :        :                   :         : 6         :                
+VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
+GND                          : N2        : gnd    :                   :         :           :                
+master_1_addr[6]             : N3        : input  : 2.5 V             :         : 1         : N              
+slave_0_wdata[18]            : N4        : output : 2.5 V             :         : 1         : N              
+VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
+GND                          : N6        : gnd    :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
+slave_0_wdata[11]            : N8        : output : 2.5 V             :         : 1         : N              
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N21       :        :                   :         : 6         :                
+MSEL0                        : N22       :        :                   :         : 6         :                
+GND                          : N23       : gnd    :                   :         :           :                
+VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N26       :        :                   :         : 6         :                
+GND                          : N27       : gnd    :                   :         :           :                
+VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
+slave_0_addr[21]             : P1        : output : 2.5 V             :         : 1         : N              
+master_1_addr[23]            : P2        : input  : 2.5 V             :         : 1         : N              
+~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
+nCONFIG                      : P4        :        :                   :         : 1         :                
+TCK                          : P5        : input  :                   :         : 1         :                
+TDO                          : P6        : output :                   :         : 1         :                
+TDI                          : P7        : input  :                   :         : 1         :                
+TMS                          : P8        : input  :                   :         : 1         :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P21       :        :                   :         : 5         :                
+MSEL3                        : P22       :        :                   :         : 6         :                
+MSEL1                        : P23       :        :                   :         : 6         :                
+CONF_DONE                    : P24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P27       :        :                   :         : 6         :                
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
+slave_1_addr[7]              : R1        : output : 2.5 V             :         : 2         : N              
+slave_0_wdata[13]            : R2        : output : 2.5 V             :         : 2         : N              
+slave_1_wdata[5]             : R3        : output : 2.5 V             :         : 2         : N              
+master_0_wdata[11]           : R4        : input  : 2.5 V             :         : 2         : N              
+master_0_addr[13]            : R5        : input  : 2.5 V             :         : 2         : N              
+master_0_wdata[21]           : R6        : input  : 2.5 V             :         : 2         : N              
+master_1_addr[11]            : R7        : input  : 2.5 V             :         : 2         : N              
+nCE                          : R8        :        :                   :         : 1         :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R21       :        :                   :         : 5         :                
+slave_0_rdata[24]            : R22       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R23       :        :                   :         : 5         :                
+master_1_rdata[4]            : R24       : output : 2.5 V             :         : 5         : N              
+master_1_rdata[30]           : R25       : output : 2.5 V             :         : 5         : N              
+master_1_rdata[31]           : R26       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R27       :        :                   :         : 5         :                
+slave_1_rdata[31]            : R28       : input  : 2.5 V             :         : 5         : N              
+VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
+GND                          : T2        : gnd    :                   :         :           :                
+slave_1_wdata[12]            : T3        : output : 2.5 V             :         : 2         : N              
+master_1_wdata[16]           : T4        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
+GND                          : T6        : gnd    :                   :         :           :                
+master_0_wdata[23]           : T7        : input  : 2.5 V             :         : 2         : N              
+master_1_wdata[11]           : T8        : input  : 2.5 V             :         : 2         : N              
+slave_1_addr[21]             : T9        : output : 2.5 V             :         : 2         : N              
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+slave_1_rdata[4]             : T21       : input  : 2.5 V             :         : 5         : N              
+master_1_rdata[29]           : T22       : output : 2.5 V             :         : 5         : N              
+GND                          : T23       : gnd    :                   :         :           :                
+VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
+slave_0_rdata[31]            : T25       : input  : 2.5 V             :         : 5         : N              
+slave_0_rdata[29]            : T26       : input  : 2.5 V             :         : 5         : N              
+GND                          : T27       : gnd    :                   :         :           :                
+VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
+master_1_addr[22]            : U1        : input  : 2.5 V             :         : 2         : N              
+master_0_wdata[12]           : U2        : input  : 2.5 V             :         : 2         : N              
+slave_0_addr[18]             : U3        : output : 2.5 V             :         : 2         : N              
+slave_1_addr[13]             : U4        : output : 2.5 V             :         : 2         : N              
+slave_1_addr[23]             : U5        : output : 2.5 V             :         : 2         : N              
+master_1_addr[28]            : U6        : input  : 2.5 V             :         : 2         : N              
+master_1_wdata[18]           : U7        : input  : 2.5 V             :         : 2         : N              
+master_1_addr[16]            : U8        : input  : 2.5 V             :         : 2         : N              
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+master_0_rdata[27]           : U20       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : U21       : power  :                   : 2.5V    : 5         :                
+master_0_rdata[22]           : U22       : output : 2.5 V             :         : 5         : N              
+slave_1_rdata[24]            : U23       : input  : 2.5 V             :         : 5         : N              
+master_0_rdata[21]           : U24       : output : 2.5 V             :         : 5         : N              
+master_0_rdata[30]           : U25       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U26       :        :                   :         : 5         :                
+slave_1_rdata[26]            : U27       : input  : 2.5 V             :         : 5         : N              
+slave_1_rdata[22]            : U28       : input  : 2.5 V             :         : 5         : N              
+slave_1_wdata[11]            : V1        : output : 2.5 V             :         : 2         : N              
+slave_0_wdata[5]             : V2        : output : 2.5 V             :         : 2         : N              
+master_1_addr[7]             : V3        : input  : 2.5 V             :         : 2         : N              
+master_0_addr[21]            : V4        : input  : 2.5 V             :         : 2         : N              
+slave_1_addr[14]             : V5        : output : 2.5 V             :         : 2         : N              
+master_0_addr[7]             : V6        : input  : 2.5 V             :         : 2         : N              
+slave_0_addr[27]             : V7        : output : 2.5 V             :         : 2         : N              
+slave_0_addr[10]             : V8        : output : 2.5 V             :         : 2         : N              
+master_0_addr[6]             : V9        : input  : 2.5 V             :         : 2         : N              
+GND                          : V10       : gnd    :                   :         :           :                
+VCCINT                       : V11       : power  :                   : 1.2V    :           :                
+GND                          : V12       : gnd    :                   :         :           :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+VCCINT                       : V15       : power  :                   : 1.2V    :           :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+master_0_rdata[31]           : V20       : output : 2.5 V             :         : 5         : N              
+master_0_rdata[18]           : V21       : output : 2.5 V             :         : 5         : N              
+master_0_rdata[29]           : V22       : output : 2.5 V             :         : 5         : N              
+master_0_rdata[23]           : V23       : output : 2.5 V             :         : 5         : N              
+slave_1_rdata[23]            : V24       : input  : 2.5 V             :         : 5         : N              
+slave_0_rdata[26]            : V25       : input  : 2.5 V             :         : 5         : N              
+slave_0_rdata[28]            : V26       : input  : 2.5 V             :         : 5         : N              
+master_0_rdata[26]           : V27       : output : 2.5 V             :         : 5         : N              
+master_1_rdata[26]           : V28       : output : 2.5 V             :         : 5         : N              
+master_0_wdata[9]            : W1        : input  : 2.5 V             :         : 2         : N              
+master_1_wdata[12]           : W2        : input  : 2.5 V             :         : 2         : N              
+slave_1_addr[29]             : W3        : output : 2.5 V             :         : 2         : N              
+slave_1_addr[28]             : W4        : output : 2.5 V             :         : 2         : N              
+VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
+GND                          : W6        : gnd    :                   :         :           :                
+VCCIO2                       : W7        : power  :                   : 2.5V    : 2         :                
+master_1_addr[27]            : W8        : input  : 2.5 V             :         : 2         : N              
+slave_1_wdata[19]            : W9        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W10       :        :                   :         : 3         :                
+GND                          : W11       : gnd    :                   :         :           :                
+VCCINT                       : W12       : power  :                   : 1.2V    :           :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+GND                          : W15       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W16       :        :                   :         : 4         :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+slave_1_rdata[29]            : W20       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W21       :        :                   :         : 5         :                
+slave_0_rdata[27]            : W22       : input  : 2.5 V             :         : 5         : N              
+GND                          : W23       : gnd    :                   :         :           :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+slave_0_rdata[25]            : W25       : input  : 2.5 V             :         : 5         : N              
+master_1_rdata[24]           : W26       : output : 2.5 V             :         : 5         : N              
+slave_1_rdata[21]            : W27       : input  : 2.5 V             :         : 5         : N              
+master_0_rdata[24]           : W28       : output : 2.5 V             :         : 5         : N              
+GND+                         : Y1        :        :                   :         : 2         :                
+GND+                         : Y2        :        :                   :         : 2         :                
+master_0_addr[23]            : Y3        : input  : 2.5 V             :         : 2         : N              
+slave_1_addr[18]             : Y4        : output : 2.5 V             :         : 2         : N              
+master_1_addr[12]            : Y5        : input  : 2.5 V             :         : 2         : N              
+master_0_addr[12]            : Y6        : input  : 2.5 V             :         : 2         : N              
+master_1_wdata[5]            : Y7        : input  : 2.5 V             :         : 2         : N              
+VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
+VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y10       :        :                   :         : 3         :                
+GND                          : Y11       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y12       :        :                   :         : 3         :                
+slave_0_addr[14]             : Y13       : output : 2.5 V             :         : 3         : N              
+slave_1_wdata[0]             : Y14       : output : 2.5 V             :         : 3         : N              
+slave_1_addr[30]             : Y15       : output : 2.5 V             :         : 3         : N              
+VCCIO4                       : Y16       : power  :                   : 2.5V    : 4         :                
+slave_1_rdata[11]            : Y17       : input  : 2.5 V             :         : 4         : N              
+GND                          : Y18       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y19       :        :                   :         : 4         :                
+VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
+VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y22       :        :                   :         : 5         :                
+master_1_rdata[28]           : Y23       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y24       :        :                   :         : 5         :                
+master_1_rdata[22]           : Y25       : output : 2.5 V             :         : 5         : N              
+slave_1_rdata[28]            : Y26       : input  : 2.5 V             :         : 5         : N              
+slave_0_rdata[30]            : Y27       : input  : 2.5 V             :         : 5         : N              
+slave_1_rdata[30]            : Y28       : input  : 2.5 V             :         : 5         : N              
