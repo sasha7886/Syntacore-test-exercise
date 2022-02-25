@@ -104,8 +104,8 @@ initial begin
 end
 always #2 clk = ~clk;
 always @ (posedge clk or negedge rst) begin
-    counter = counter +1'b1;
-    if (counter[5] == 1) begin
+    counter = counter + 1'b1;
+    if (counter[4] == 1) begin
         $stop;
     end
 end
@@ -136,7 +136,7 @@ end
 
     );
 
-    slave #(.N(0)) s0(
+    slave s0(
        .clk   (clk),
        .rst   (rst),
        .ack   (slave_0_ack),
@@ -147,7 +147,7 @@ end
        .addr  (slave_0_addr)
     );
 
-    slave #(.N(2)) s1(
+    slave s1(
        .clk   (clk),
        .rst   (rst),
        .ack   (slave_1_ack),
